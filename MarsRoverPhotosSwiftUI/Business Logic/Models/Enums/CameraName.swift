@@ -10,16 +10,16 @@ import Foundation
 enum CameraIdentifier: String, Decodable, CaseIterable, Identifiable {
   var id: Self { self }
   
-  case all     = "all"
+  case all     = "All"
   case none    = "none"
-  case entry   = "entry"
-  case fhaz    = "fhaz"
-  case rhaz    = "rhaz"
-  case mast    = "mast"
-  case chemcam = "chemcam"
-  case mahli   = "mahli"
-  case mardi   = "mardi"
-  case navcam  = "navcam"
-  case pancam  = "pancam"
-  case minites = "minites"
+  case entry   = "Entry"
+  case fhaz    = "Fhaz"
+  case rhaz    = "Rhaz"
+  case mast    = "Mast"
+  case chemcam = "Chemcam"
+  case mahli   = "Mahli"
+  case mardi   = "Mardi"
+  case navcam  = "Navcam"
+  case pancam  = "Pancam"
+  case minites = "Minites"
 }

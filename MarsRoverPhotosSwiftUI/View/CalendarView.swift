@@ -32,7 +32,8 @@ struct CalendarView: View {
             
             Spacer()
             
-            Text("title")
+            Text(LocalizedStringKey(ConstantsStrings.MainModule.date
+              .string))
               .font(ConstantsFonts.sfProBold(22).font)
             
             Spacer()
@@ -46,9 +47,6 @@ struct CalendarView: View {
             .padding(.trailing, 26)
             .frame(width: 44, height: 44)
           }
-          //.padding(.top, 20)
-          
-          //Spacer()
           
           DatePicker("",
                      selection: $selectedDate,

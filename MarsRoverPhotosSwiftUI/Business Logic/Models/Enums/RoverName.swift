@@ -7,30 +7,21 @@
 
 import Foundation
 
-//enum RoverName: String, Decodable, CaseIterable, Identifiable {
-//  var id: Self { self }
-//  
-//  case all         = "all"
-//  case curiosity   = "curiosity"
-//  case opportunity = "opportunity"
-//  case spirit      = "spirit"
-//}
-
 enum RoverName: String, Decodable, CaseIterable, Identifiable {
   var id: Self { self }
   
-  case curiosity = "curiosity"
-  case opportunity = "opportunity"
-  case spirit = "spirit"
+  case curiosity = "Curiosity"
+  case opportunity = "Opportunity"
+  case spirit = "Spirit"
   
   var cameras: [CameraIdentifier] {
     switch self {
     case .curiosity:
-      return [.fhaz, .rhaz, .mast, .chemcam, .mahli, .mardi, .navcam]
+      return [.all, .fhaz, .rhaz, .mast, .chemcam, .mahli, .mardi, .navcam]
     case .opportunity:
-      return [.fhaz, .rhaz, .navcam, .pancam, .minites]
+      return [.all, .fhaz, .rhaz, .navcam, .pancam, .minites]
     case .spirit:
-      return [.fhaz, .rhaz, .navcam, .pancam, .minites]
+      return [.all, .fhaz, .rhaz, .navcam, .pancam, .minites]
     }
   }
 }

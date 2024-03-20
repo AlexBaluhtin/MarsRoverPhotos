@@ -14,7 +14,6 @@ struct MainRowView: View {
   var isLast: Bool
   let photo: Photo
   var didTapRow: ((String) -> Void)
-  @State var hero = false
   
   init(isLast: Bool, photo: Photo, didTapRow: @escaping ((String) -> Void)) {
     self.isLast = isLast
@@ -31,35 +30,30 @@ struct MainRowView: View {
         createTextTitleWithSubtitle("Date:", photo.earthDate)
       }
       .padding(.horizontal, 16)
-      .padding(.vertical, 23)
       .frame(maxWidth: .infinity, alignment: .leading)
       
       Spacer()
-      
-      Image(uiImage: viewModel.image ?? UIImage())
-        .resizable()
-        .scaledToFill()
-        .frame(width: 130, height: 130)
-        .cornerRadius(20)
-        .padding(.trailing, 10)
+      ZStack {
+        Image(uiImage: viewModel.image ?? UIImage())
+          .resizable()
+      }
+      .scaledToFill()
+      .frame(width: 130, height: 130)
+      .cornerRadius(20)
+      .padding(.trailing, 10)
       
     }
-    .hideRowSeparator()
     .padding(.vertical, 10)
-    //.padding(.trailing, 10)
+    .padding(.trailing, 10)
     .background(Color.white)
     .cornerRadius(30)
     .shadow(color: Color.black.opacity(0.079), radius: 8, x: 0, y: 3)
-    .onAppear(perform: {
-      if isLast {
-        print("Last cell appeared on screen")
-      }
-    })
     .onTapGesture {
       didTapRow(photo.imgSrc)
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)
     .padding(.horizontal, 16)
+    .padding(.vertical, 6)
   }
 }
 
@@ -77,7 +71,6 @@ extension MainRowView {
     }
   }
 }
-
 
 //#Preview {
 //    MainRowView()

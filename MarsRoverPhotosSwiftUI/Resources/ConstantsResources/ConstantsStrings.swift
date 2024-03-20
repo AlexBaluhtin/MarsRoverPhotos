@@ -10,14 +10,39 @@ import Foundation
 enum ConstantsStrings {
   
   enum MainModule {
-    case home
-    case chat
+    case date
+    case title
+    case saveFilters
+    case saveFiltersDescription
+    case save
+    case cancel
+    case pleaseWait
+    case titleRover
+    case titleCamera
+    case noPhotoAvailable
+    
     var string: String {
       switch self {
-      case .home:
-        return "TabBar.home"
-      case .chat:
-        return "TabBar.chat"
+      case .date:
+        return  "MainModule.date"
+      case .title:
+        return "MainModule.navigationTitle"
+      case .saveFilters:
+        return "MainModule.saveFilters"
+      case .saveFiltersDescription:
+        return "MainModule.saveFiltersDescription"
+      case .save:
+        return "MainModule.save"
+      case .cancel:
+        return "MainModule.cancel"
+      case .pleaseWait:
+        return "MainModule.pleaseWait"
+      case .titleRover:
+        return "MainModule.titleRover"
+      case .titleCamera:
+        return "MainModule.titleCamera"
+      case .noPhotoAvailable:
+        return "MainModule.noPhotoAvailable"
       }
     }
   }
@@ -56,4 +81,6 @@ enum ConstantsStrings {
       }
     }
   }
+  
+  
 }

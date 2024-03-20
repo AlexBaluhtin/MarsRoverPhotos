@@ -23,8 +23,8 @@ final class MarsRoverPhotosNetworkService: MarsRoverPhotosServiceProtocol {
   }
   
   func getMarsPhotos(rover: String, camera: String, date: String, page: Int) -> AnyPublisher<MarsPhoto, Error> {
-    let endpoint = Endpoint.roverPhotos(roverName: rover,
-                                        camera: camera,
+    let endpoint = Endpoint.roverPhotos(roverName: rover.lowercased(),
+                                        camera: camera.lowercased(),
                                         earthDate: date,
                                         page: page)
     

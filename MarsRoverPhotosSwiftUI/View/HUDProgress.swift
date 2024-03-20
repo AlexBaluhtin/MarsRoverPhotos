@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HUDProgress: View {
   
-  var placeholder: String
+  var placeholder: LocalizedStringKey
   @Binding var show: Bool
   @State var animate = false
   

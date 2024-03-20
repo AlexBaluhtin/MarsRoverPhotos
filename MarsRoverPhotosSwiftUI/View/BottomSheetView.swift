@@ -11,11 +11,11 @@ struct BottomSheetView: View {
   @Environment(\.presentationMode) var presentationMode
   
   let rows: [String]
-  let title: String
+  let title: LocalizedStringKey
   var onSelect: ((String) -> Void)
   @State var selectedRow: String = ""
   
-  init(title: String, rows: [String], onSelect: @escaping ((String) -> Void)) {
+  init(title: LocalizedStringKey, rows: [String], onSelect: @escaping ((String) -> Void)) {
     self.title = title
     self.rows = rows
     self.onSelect = onSelect

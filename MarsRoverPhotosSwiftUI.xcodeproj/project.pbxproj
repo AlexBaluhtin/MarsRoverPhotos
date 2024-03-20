@@ -55,6 +55,9 @@
 		04E346452BAA64790023A039 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346442BAA64790023A039 /* FilterModel.swift */; };
 		04E346482BAAEF5B0023A039 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346472BAAEF5B0023A039 /* HistoryViewModel.swift */; };
 		04E3464B2BAB13B50023A039 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 04E3464A2BAB13B50023A039 /* Lottie */; };
+		04E3464E2BAB2DBA0023A039 /* FullScreenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3464D2BAB2DBA0023A039 /* FullScreenModifier.swift */; };
+		04E346502BAB2DF90023A039 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3464F2BAB2DF90023A039 /* MyList.swift */; };
+		04E346522BAB2E1B0023A039 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346512BAB2E1B0023A039 /* PullToRefresh.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +107,9 @@
 		04E346422BAA644B0023A039 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		04E346442BAA64790023A039 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
 		04E346472BAAEF5B0023A039 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		04E3464D2BAB2DBA0023A039 /* FullScreenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenModifier.swift; sourceTree = "<group>"; };
+		04E3464F2BAB2DF90023A039 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
+		04E346512BAB2E1B0023A039 /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,7 @@
 		0435BE8F2BA265BD004786FD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				04E3464C2BAB2DAE0023A039 /* Helpers */,
 				04E346362BAA503C0023A039 /* Foundation */,
 				04CC8E582BA5D43400B684E9 /* SwiftUI */,
 			);
@@ -381,6 +388,16 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		04E3464C2BAB2DAE0023A039 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04E3464D2BAB2DBA0023A039 /* FullScreenModifier.swift */,
+				04E3464F2BAB2DF90023A039 /* MyList.swift */,
+				04E346512BAB2E1B0023A039 /* PullToRefresh.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -474,7 +491,9 @@
 				04CC8E962BA758E500B684E9 /* AsyncImage.swift in Sources */,
 				04CC8E9F2BA85F5900B684E9 /* FullImageView.swift in Sources */,
 				04CC8E572BA5D42E00B684E9 /* Color+hex.swift in Sources */,
+				04E346502BAB2DF90023A039 /* MyList.swift in Sources */,
 				0435BEA32BA26A9C004786FD /* ConstantsImages.swift in Sources */,
+				04E346522BAB2E1B0023A039 /* PullToRefresh.swift in Sources */,
 				04CC8E792BA71DBD00B684E9 /* MarsPhoto.swift in Sources */,
 				04CC8E8E2BA74F9700B684E9 /* MarsRoverPhotosNetworkService.swift in Sources */,
 				04CC8E5B2BA5DD9700B684E9 /* MainView.swift in Sources */,
@@ -496,6 +515,7 @@
 				04E345F72BA8975D0023A039 /* BottomSheetView.swift in Sources */,
 				04E346412BAA641F0023A039 /* Model.swift in Sources */,
 				04E346432BAA644B0023A039 /* CoreDataService.swift in Sources */,
+				04E3464E2BAB2DBA0023A039 /* FullScreenModifier.swift in Sources */,
 				04E3463A2BAA57790023A039 /* TypeBottomSheetFilter.swift in Sources */,
 				04E346342BAA3E5F0023A039 /* BlurView.swift in Sources */,
 				04CC8E7E2BA71F0E00B684E9 /* MainViewModel.swift in Sources */,

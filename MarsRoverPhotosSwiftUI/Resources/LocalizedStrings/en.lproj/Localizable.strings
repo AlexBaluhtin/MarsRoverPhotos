@@ -8,7 +8,16 @@
 
 // MARK: - MainModule
 
-
+"MainModule.navigationTitle" = "MARS.CAMERA";
+"MainModule.saveFilters" = "Save Filters";
+"MainModule.saveFiltersDescription" = "The current filters and the date you have chosen can be saved to the filter history.";
+"MainModule.save" = "Save";
+"MainModule.cancel" = "Cancel";
+"MainModule.pleaseWait" = "Please Wait";
+"MainModule.titleRover" = "Rover";
+"MainModule.titleCamera" = "Camera";
+"MainModule.noPhotoAvailable" = "No photos available";
+"MainModule.date" = "Date";
 
 // MARK: - HistoryModule
 

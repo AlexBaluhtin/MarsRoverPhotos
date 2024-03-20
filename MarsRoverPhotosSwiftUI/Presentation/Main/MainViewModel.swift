@@ -8,6 +8,7 @@
 import CoreData
 import Combine
 import Foundation
+import SwiftUI
 
 protocol MarsRoverPhotosViewModelProtocol: ObservableObject {
   func fetchPhotos()
@@ -28,9 +29,13 @@ protocol MarsRoverPhotosViewModelProtocol: ObservableObject {
 final class MarsRoverPhotosViewModel: MarsRoverPhotosViewModelProtocol {
   private var dataBaseService = CoreDataService.shared
   
-  @Published var filter: FilterModel = FilterModel(id: UUID())
+  @Published var filter: FilterModel = FilterModel(id: UUID()) {
+      didSet {
+        changeFilter()
+      }
+  }
   @Published var photos: [Photo] = []
-  @Published var titleBottomSheet: String = ""
+  @Published var titleBottomSheet: LocalizedStringKey = ""
   @Published var isOpenCalendar = false
   
   var selectedImage: String = ""
