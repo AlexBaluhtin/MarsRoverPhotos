@@ -3,22 +3,107 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0435BE792BA245E8004786FD /* MarsRoverPhotosSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435BE782BA245E8004786FD /* MarsRoverPhotosSwiftUIApp.swift */; };
-		0435BE7B2BA245E8004786FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435BE7A2BA245E8004786FD /* ContentView.swift */; };
 		0435BE7D2BA245EB004786FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0435BE7C2BA245EB004786FD /* Assets.xcassets */; };
 		0435BE802BA245EB004786FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0435BE7F2BA245EB004786FD /* Preview Assets.xcassets */; };
+		0435BE8C2BA25FC9004786FD /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435BE8B2BA25FC9004786FD /* LottieView.swift */; };
+		0435BE8E2BA26208004786FD /* lottieLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = 0435BE8D2BA26207004786FD /* lottieLoading.json */; };
+		0435BE942BA266C2004786FD /* ConstantsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435BE932BA266C2004786FD /* ConstantsColor.swift */; };
+		0435BE962BA26820004786FD /* ConstantsStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435BE952BA26820004786FD /* ConstantsStrings.swift */; };
+		0435BE9D2BA268DF004786FD /* ConstantsFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435BE9C2BA268DE004786FD /* ConstantsFonts.swift */; };
+		0435BEA32BA26A9C004786FD /* ConstantsImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0435BEA22BA26A9C004786FD /* ConstantsImages.swift */; };
+		04CC8D9B2BA58DE800B684E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8D9A2BA58DE800B684E9 /* AppDelegate.swift */; };
+		04CC8DBD2BA58F1600B684E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8DBC2BA58F1600B684E9 /* SceneDelegate.swift */; };
+		04CC8E532BA5D2DA00B684E9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E522BA5D2DA00B684E9 /* SplashView.swift */; };
+		04CC8E572BA5D42E00B684E9 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E562BA5D42E00B684E9 /* Color+hex.swift */; };
+		04CC8E5B2BA5DD9700B684E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E5A2BA5DD9700B684E9 /* MainView.swift */; };
+		04CC8E5F2BA5FC2100B684E9 /* MainRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E5E2BA5FC2100B684E9 /* MainRowView.swift */; };
+		04CC8E642BA6439D00B684E9 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E632BA6439D00B684E9 /* HistoryView.swift */; };
+		04CC8E662BA65F7600B684E9 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E652BA65F7600B684E9 /* HistoryRowView.swift */; };
+		04CC8E6B2BA665DF00B684E9 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CC8E692BA665DF00B684E9 /* SFProText-Regular.ttf */; };
+		04CC8E6C2BA665DF00B684E9 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CC8E6A2BA665DF00B684E9 /* SFProText-Bold.ttf */; };
+		04CC8E6E2BA66B3300B684E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04CC8E702BA66B3300B684E9 /* Localizable.strings */; };
+		04CC8E732BA71D1E00B684E9 /* RoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E722BA71D1E00B684E9 /* RoverModel.swift */; };
+		04CC8E752BA71D6800B684E9 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E742BA71D6800B684E9 /* CameraModel.swift */; };
+		04CC8E772BA71D9600B684E9 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E762BA71D9600B684E9 /* Photo.swift */; };
+		04CC8E792BA71DBD00B684E9 /* MarsPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E782BA71DBD00B684E9 /* MarsPhoto.swift */; };
+		04CC8E7E2BA71F0E00B684E9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E7D2BA71F0E00B684E9 /* MainViewModel.swift */; };
+		04CC8E812BA7299900B684E9 /* RoverName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E802BA7299900B684E9 /* RoverName.swift */; };
+		04CC8E832BA729D000B684E9 /* CameraName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E822BA729D000B684E9 /* CameraName.swift */; };
+		04CC8E892BA74E3700B684E9 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E882BA74E3700B684E9 /* Networker.swift */; };
+		04CC8E8E2BA74F9700B684E9 /* MarsRoverPhotosNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E8D2BA74F9600B684E9 /* MarsRoverPhotosNetworkService.swift */; };
+		04CC8E962BA758E500B684E9 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E952BA758E500B684E9 /* AsyncImage.swift */; };
+		04CC8E9B2BA854CF00B684E9 /* MainRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E9A2BA854CF00B684E9 /* MainRowViewModel.swift */; };
+		04CC8E9F2BA85F5900B684E9 /* FullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC8E9E2BA85F5900B684E9 /* FullImageView.swift */; };
+		04E345F72BA8975D0023A039 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E345F62BA8975D0023A039 /* BottomSheetView.swift */; };
+		04E345FB2BA8A2400023A039 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E345FA2BA8A2400023A039 /* CustomPickerView.swift */; };
+		04E346002BA8EB830023A039 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E345FF2BA8EB830023A039 /* CalendarView.swift */; };
+		04E346022BA901A80023A039 /* FullImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346012BA901A80023A039 /* FullImageViewModel.swift */; };
+		04E346052BA990070023A039 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = 04E346042BA990070023A039 /* SwiftUIIntrospect */; };
+		04E346072BA990070023A039 /* SwiftUIIntrospect-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 04E346062BA990070023A039 /* SwiftUIIntrospect-Dynamic */; };
+		04E346092BA990070023A039 /* SwiftUIIntrospect-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 04E346082BA990070023A039 /* SwiftUIIntrospect-Static */; };
+		04E346312BAA3D2F0023A039 /* HUDProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346302BAA3D2F0023A039 /* HUDProgress.swift */; };
+		04E346342BAA3E5F0023A039 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346332BAA3E5F0023A039 /* BlurView.swift */; };
+		04E346382BAA50580023A039 /* UIImage+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346372BAA50580023A039 /* UIImage+ImageCache.swift */; };
+		04E3463A2BAA57790023A039 /* TypeBottomSheetFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346392BAA57790023A039 /* TypeBottomSheetFilter.swift */; };
+		04E3463F2BAA63A90023A039 /* MarsRoverPhotosDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04E3463D2BAA63A90023A039 /* MarsRoverPhotosDataModel.xcdatamodeld */; };
+		04E346412BAA641F0023A039 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346402BAA641F0023A039 /* Model.swift */; };
+		04E346432BAA644B0023A039 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346422BAA644B0023A039 /* CoreDataService.swift */; };
+		04E346452BAA64790023A039 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346442BAA64790023A039 /* FilterModel.swift */; };
+		04E346482BAAEF5B0023A039 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E346472BAAEF5B0023A039 /* HistoryViewModel.swift */; };
+		04E3464B2BAB13B50023A039 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 04E3464A2BAB13B50023A039 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0435BE752BA245E8004786FD /* MarsRoverPhotosSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsRoverPhotosSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0435BE782BA245E8004786FD /* MarsRoverPhotosSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosSwiftUIApp.swift; sourceTree = "<group>"; };
-		0435BE7A2BA245E8004786FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0435BE7C2BA245EB004786FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0435BE7F2BA245EB004786FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0435BE8B2BA25FC9004786FD /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		0435BE8D2BA26207004786FD /* lottieLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottieLoading.json; sourceTree = "<group>"; };
+		0435BE932BA266C2004786FD /* ConstantsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsColor.swift; sourceTree = "<group>"; };
+		0435BE952BA26820004786FD /* ConstantsStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsStrings.swift; sourceTree = "<group>"; };
+		0435BE9C2BA268DE004786FD /* ConstantsFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsFonts.swift; sourceTree = "<group>"; };
+		0435BEA12BA26A56004786FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0435BEA22BA26A9C004786FD /* ConstantsImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsImages.swift; sourceTree = "<group>"; };
+		04CC8D9A2BA58DE800B684E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04CC8DBC2BA58F1600B684E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04CC8E522BA5D2DA00B684E9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		04CC8E562BA5D42E00B684E9 /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
+		04CC8E5A2BA5DD9700B684E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		04CC8E5E2BA5FC2100B684E9 /* MainRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRowView.swift; sourceTree = "<group>"; };
+		04CC8E632BA6439D00B684E9 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		04CC8E652BA65F7600B684E9 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
+		04CC8E692BA665DF00B684E9 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		04CC8E6A2BA665DF00B684E9 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		04CC8E6F2BA66B3300B684E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04CC8E722BA71D1E00B684E9 /* RoverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
+		04CC8E742BA71D6800B684E9 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		04CC8E762BA71D9600B684E9 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		04CC8E782BA71DBD00B684E9 /* MarsPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhoto.swift; sourceTree = "<group>"; };
+		04CC8E7D2BA71F0E00B684E9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		04CC8E802BA7299900B684E9 /* RoverName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverName.swift; sourceTree = "<group>"; };
+		04CC8E822BA729D000B684E9 /* CameraName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraName.swift; sourceTree = "<group>"; };
+		04CC8E882BA74E3700B684E9 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		04CC8E8D2BA74F9600B684E9 /* MarsRoverPhotosNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosNetworkService.swift; sourceTree = "<group>"; };
+		04CC8E952BA758E500B684E9 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		04CC8E9A2BA854CF00B684E9 /* MainRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRowViewModel.swift; sourceTree = "<group>"; };
+		04CC8E9E2BA85F5900B684E9 /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
+		04E345F62BA8975D0023A039 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		04E345FA2BA8A2400023A039 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		04E345FF2BA8EB830023A039 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		04E346012BA901A80023A039 /* FullImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewModel.swift; sourceTree = "<group>"; };
+		04E346302BAA3D2F0023A039 /* HUDProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDProgress.swift; sourceTree = "<group>"; };
+		04E346332BAA3E5F0023A039 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		04E346372BAA50580023A039 /* UIImage+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageCache.swift"; sourceTree = "<group>"; };
+		04E346392BAA57790023A039 /* TypeBottomSheetFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeBottomSheetFilter.swift; sourceTree = "<group>"; };
+		04E3463E2BAA63A90023A039 /* MarsRoverPhotosDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarsRoverPhotosDataModel.xcdatamodel; sourceTree = "<group>"; };
+		04E346402BAA641F0023A039 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		04E346422BAA644B0023A039 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		04E346442BAA64790023A039 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
+		04E346472BAAEF5B0023A039 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +111,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E346052BA990070023A039 /* SwiftUIIntrospect in Frameworks */,
+				04E346072BA990070023A039 /* SwiftUIIntrospect-Dynamic in Frameworks */,
+				04E346092BA990070023A039 /* SwiftUIIntrospect-Static in Frameworks */,
+				04E3464B2BAB13B50023A039 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +140,16 @@
 		0435BE772BA245E8004786FD /* MarsRoverPhotosSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				0435BE782BA245E8004786FD /* MarsRoverPhotosSwiftUIApp.swift */,
-				0435BE7A2BA245E8004786FD /* ContentView.swift */,
-				0435BE7C2BA245EB004786FD /* Assets.xcassets */,
+				04CC8E612BA6436B00B684E9 /* App */,
+				04CC8E842BA746A900B684E9 /* Presentation */,
+				04CC8E852BA7470700B684E9 /* Business Logic */,
+				04CC8E4D2BA5D23300B684E9 /* Core */,
+				0435BE902BA265D5004786FD /* Resources */,
+				0435BE8F2BA265BD004786FD /* Extension */,
+				0435BE8A2BA25FAE004786FD /* View */,
+				0435BE8D2BA26207004786FD /* lottieLoading.json */,
 				0435BE7E2BA245EB004786FD /* Preview Content */,
+				04E3463D2BAA63A90023A039 /* MarsRoverPhotosDataModel.xcdatamodeld */,
 			);
 			path = MarsRoverPhotosSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +160,225 @@
 				0435BE7F2BA245EB004786FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0435BE8A2BA25FAE004786FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0435BE8B2BA25FC9004786FD /* LottieView.swift */,
+				04CC8E652BA65F7600B684E9 /* HistoryRowView.swift */,
+				04E345F62BA8975D0023A039 /* BottomSheetView.swift */,
+				04E345FA2BA8A2400023A039 /* CustomPickerView.swift */,
+				04E345FF2BA8EB830023A039 /* CalendarView.swift */,
+				04E346302BAA3D2F0023A039 /* HUDProgress.swift */,
+				04E346332BAA3E5F0023A039 /* BlurView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0435BE8F2BA265BD004786FD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04E346362BAA503C0023A039 /* Foundation */,
+				04CC8E582BA5D43400B684E9 /* SwiftUI */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0435BE902BA265D5004786FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0435BEA12BA26A56004786FD /* Info.plist */,
+				0435BE7C2BA245EB004786FD /* Assets.xcassets */,
+				0435BE972BA2684A004786FD /* LocalizedStrings */,
+				0435BE922BA2669D004786FD /* ConstantsResources */,
+				0435BE912BA2668B004786FD /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0435BE912BA2668B004786FD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E6A2BA665DF00B684E9 /* SFProText-Bold.ttf */,
+				04CC8E692BA665DF00B684E9 /* SFProText-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0435BE922BA2669D004786FD /* ConstantsResources */ = {
+			isa = PBXGroup;
+			children = (
+				0435BE932BA266C2004786FD /* ConstantsColor.swift */,
+				0435BE952BA26820004786FD /* ConstantsStrings.swift */,
+				0435BE9C2BA268DE004786FD /* ConstantsFonts.swift */,
+				0435BEA22BA26A9C004786FD /* ConstantsImages.swift */,
+			);
+			path = ConstantsResources;
+			sourceTree = "<group>";
+		};
+		0435BE972BA2684A004786FD /* LocalizedStrings */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E702BA66B3300B684E9 /* Localizable.strings */,
+			);
+			path = LocalizedStrings;
+			sourceTree = "<group>";
+		};
+		04CC8E4D2BA5D23300B684E9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E7A2BA71DDA00B684E9 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		04CC8E502BA5D2C300B684E9 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E522BA5D2DA00B684E9 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		04CC8E582BA5D43400B684E9 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E562BA5D42E00B684E9 /* Color+hex.swift */,
+				04CC8E952BA758E500B684E9 /* AsyncImage.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		04CC8E592BA5DD8500B684E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E5E2BA5FC2100B684E9 /* MainRowView.swift */,
+				04CC8E9A2BA854CF00B684E9 /* MainRowViewModel.swift */,
+				04CC8E5A2BA5DD9700B684E9 /* MainView.swift */,
+				04CC8E7D2BA71F0E00B684E9 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04CC8E612BA6436B00B684E9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8D9A2BA58DE800B684E9 /* AppDelegate.swift */,
+				04CC8DBC2BA58F1600B684E9 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04CC8E622BA6438600B684E9 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E632BA6439D00B684E9 /* HistoryView.swift */,
+				04E346472BAAEF5B0023A039 /* HistoryViewModel.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		04CC8E7A2BA71DDA00B684E9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E882BA74E3700B684E9 /* Networker.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04CC8E7F2BA71F6D00B684E9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E802BA7299900B684E9 /* RoverName.swift */,
+				04CC8E822BA729D000B684E9 /* CameraName.swift */,
+				04E346392BAA57790023A039 /* TypeBottomSheetFilter.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		04CC8E842BA746A900B684E9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E9C2BA85F3B00B684E9 /* FullImage */,
+				04CC8E502BA5D2C300B684E9 /* Splash */,
+				04CC8E592BA5DD8500B684E9 /* Main */,
+				04CC8E622BA6438600B684E9 /* History */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		04CC8E852BA7470700B684E9 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E872BA7472200B684E9 /* Models */,
+				04CC8E862BA7471B00B684E9 /* Services */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		04CC8E862BA7471B00B684E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04E3463C2BAA63370023A039 /* Database */,
+				04E3463B2BAA63220023A039 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04CC8E872BA7472200B684E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E7F2BA71F6D00B684E9 /* Enums */,
+				04CC8E722BA71D1E00B684E9 /* RoverModel.swift */,
+				04CC8E742BA71D6800B684E9 /* CameraModel.swift */,
+				04CC8E762BA71D9600B684E9 /* Photo.swift */,
+				04CC8E782BA71DBD00B684E9 /* MarsPhoto.swift */,
+				04E346402BAA641F0023A039 /* Model.swift */,
+				04E346442BAA64790023A039 /* FilterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04CC8E8A2BA74F5600B684E9 /* MarsRoverPhotosNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E8D2BA74F9600B684E9 /* MarsRoverPhotosNetworkService.swift */,
+			);
+			path = MarsRoverPhotosNetworkService;
+			sourceTree = "<group>";
+		};
+		04CC8E9C2BA85F3B00B684E9 /* FullImage */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E9E2BA85F5900B684E9 /* FullImageView.swift */,
+				04E346012BA901A80023A039 /* FullImageViewModel.swift */,
+			);
+			path = FullImage;
+			sourceTree = "<group>";
+		};
+		04E346362BAA503C0023A039 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				04E346372BAA50580023A039 /* UIImage+ImageCache.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		04E3463B2BAA63220023A039 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04CC8E8A2BA74F5600B684E9 /* MarsRoverPhotosNetworkService */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04E3463C2BAA63370023A039 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				04E346422BAA644B0023A039 /* CoreDataService.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +397,12 @@
 			dependencies = (
 			);
 			name = MarsRoverPhotosSwiftUI;
+			packageProductDependencies = (
+				04E346042BA990070023A039 /* SwiftUIIntrospect */,
+				04E346062BA990070023A039 /* SwiftUIIntrospect-Dynamic */,
+				04E346082BA990070023A039 /* SwiftUIIntrospect-Static */,
+				04E3464A2BAB13B50023A039 /* Lottie */,
+			);
 			productName = MarsRoverPhotosSwiftUI;
 			productReference = 0435BE752BA245E8004786FD /* MarsRoverPhotosSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -103,7 +423,7 @@
 				};
 			};
 			buildConfigurationList = 0435BE702BA245E8004786FD /* Build configuration list for PBXProject "MarsRoverPhotosSwiftUI" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -111,6 +431,10 @@
 				Base,
 			);
 			mainGroup = 0435BE6C2BA245E8004786FD;
+			packageReferences = (
+				04E346032BA990070023A039 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+				04E346492BAB13B50023A039 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 0435BE762BA245E8004786FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +449,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0435BE8E2BA26208004786FD /* lottieLoading.json in Resources */,
+				04CC8E6E2BA66B3300B684E9 /* Localizable.strings in Resources */,
 				0435BE802BA245EB004786FD /* Preview Assets.xcassets in Resources */,
+				04CC8E6C2BA665DF00B684E9 /* SFProText-Bold.ttf in Resources */,
 				0435BE7D2BA245EB004786FD /* Assets.xcassets in Resources */,
+				04CC8E6B2BA665DF00B684E9 /* SFProText-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +465,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0435BE7B2BA245E8004786FD /* ContentView.swift in Sources */,
-				0435BE792BA245E8004786FD /* MarsRoverPhotosSwiftUIApp.swift in Sources */,
+				04CC8E772BA71D9600B684E9 /* Photo.swift in Sources */,
+				04CC8E832BA729D000B684E9 /* CameraName.swift in Sources */,
+				04E346312BAA3D2F0023A039 /* HUDProgress.swift in Sources */,
+				04CC8D9B2BA58DE800B684E9 /* AppDelegate.swift in Sources */,
+				04CC8E642BA6439D00B684E9 /* HistoryView.swift in Sources */,
+				04E346482BAAEF5B0023A039 /* HistoryViewModel.swift in Sources */,
+				04CC8E962BA758E500B684E9 /* AsyncImage.swift in Sources */,
+				04CC8E9F2BA85F5900B684E9 /* FullImageView.swift in Sources */,
+				04CC8E572BA5D42E00B684E9 /* Color+hex.swift in Sources */,
+				0435BEA32BA26A9C004786FD /* ConstantsImages.swift in Sources */,
+				04CC8E792BA71DBD00B684E9 /* MarsPhoto.swift in Sources */,
+				04CC8E8E2BA74F9700B684E9 /* MarsRoverPhotosNetworkService.swift in Sources */,
+				04CC8E5B2BA5DD9700B684E9 /* MainView.swift in Sources */,
+				04CC8E9B2BA854CF00B684E9 /* MainRowViewModel.swift in Sources */,
+				04E346452BAA64790023A039 /* FilterModel.swift in Sources */,
+				04E345FB2BA8A2400023A039 /* CustomPickerView.swift in Sources */,
+				04CC8DBD2BA58F1600B684E9 /* SceneDelegate.swift in Sources */,
+				04CC8E732BA71D1E00B684E9 /* RoverModel.swift in Sources */,
+				04CC8E812BA7299900B684E9 /* RoverName.swift in Sources */,
+				04CC8E892BA74E3700B684E9 /* Networker.swift in Sources */,
+				0435BE962BA26820004786FD /* ConstantsStrings.swift in Sources */,
+				04E346022BA901A80023A039 /* FullImageViewModel.swift in Sources */,
+				0435BE8C2BA25FC9004786FD /* LottieView.swift in Sources */,
+				04E3463F2BAA63A90023A039 /* MarsRoverPhotosDataModel.xcdatamodeld in Sources */,
+				04E346002BA8EB830023A039 /* CalendarView.swift in Sources */,
+				04CC8E662BA65F7600B684E9 /* HistoryRowView.swift in Sources */,
+				04E346382BAA50580023A039 /* UIImage+ImageCache.swift in Sources */,
+				0435BE9D2BA268DF004786FD /* ConstantsFonts.swift in Sources */,
+				04E345F72BA8975D0023A039 /* BottomSheetView.swift in Sources */,
+				04E346412BAA641F0023A039 /* Model.swift in Sources */,
+				04E346432BAA644B0023A039 /* CoreDataService.swift in Sources */,
+				04E3463A2BAA57790023A039 /* TypeBottomSheetFilter.swift in Sources */,
+				04E346342BAA3E5F0023A039 /* BlurView.swift in Sources */,
+				04CC8E7E2BA71F0E00B684E9 /* MainViewModel.swift in Sources */,
+				04CC8E752BA71D6800B684E9 /* CameraModel.swift in Sources */,
+				0435BE942BA266C2004786FD /* ConstantsColor.swift in Sources */,
+				04CC8E532BA5D2DA00B684E9 /* SplashView.swift in Sources */,
+				04CC8E5F2BA5FC2100B684E9 /* MainRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04CC8E702BA66B3300B684E9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CC8E6F2BA66B3300B684E9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0435BE812BA245EB004786FD /* Debug */ = {
@@ -197,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +629,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,11 +650,12 @@
 				DEVELOPMENT_TEAM = K89J92247A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MarsRoverPhotosSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +663,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Aliaksei-Balukhtsin.MarsRoverPhotosSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +683,12 @@
 				DEVELOPMENT_TEAM = K89J92247A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MarsRoverPhotosSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +696,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Aliaksei-Balukhtsin.MarsRoverPhotosSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +727,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04E346032BA990070023A039 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+		04E346492BAB13B50023A039 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04E346042BA990070023A039 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04E346032BA990070023A039 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+		04E346062BA990070023A039 /* SwiftUIIntrospect-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04E346032BA990070023A039 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "SwiftUIIntrospect-Dynamic";
+		};
+		04E346082BA990070023A039 /* SwiftUIIntrospect-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04E346032BA990070023A039 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "SwiftUIIntrospect-Static";
+		};
+		04E3464A2BAB13B50023A039 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04E346492BAB13B50023A039 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		04E3463D2BAA63A90023A039 /* MarsRoverPhotosDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04E3463E2BAA63A90023A039 /* MarsRoverPhotosDataModel.xcdatamodel */,
+			);
+			currentVersion = 04E3463E2BAA63A90023A039 /* MarsRoverPhotosDataModel.xcdatamodel */;
+			path = MarsRoverPhotosDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0435BE6D2BA245E8004786FD /* Project object */;
 }

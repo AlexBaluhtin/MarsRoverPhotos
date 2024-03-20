@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  ai_helper
+
+  Created by Alex Balukhtsin on 20/12/2023.
+  
+*/
+
+// MARK: - MainModule
+
+
+
+// MARK: - HistoryModule
+
+"HistoryModule.navigationTitle" = "History";
+"HistoryModule.filters" = "Filters";
+"HistoryModule.rover" = "Rover:";
+"HistoryModule.camera" = "Camera:";
+"HistoryModule.date" = "Date:";
+"HistoryModule.menuFilter" = "Menu Filter";
+"HistoryModule.use" = "Use";
+"HistoryModule.delete" = "Delete";
+"HistoryModule.cancel" = "Cancel";
